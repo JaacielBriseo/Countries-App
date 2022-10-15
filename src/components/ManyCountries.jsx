@@ -2,12 +2,14 @@ export const ManyCountries = ({ filteredCountries, setInputValue }) => {
   return (
     <>
       {filteredCountries.map((el) => {
+        const { name } = el;
+        const { common } = name;
         return (
-          <li key={el.name.common}>
-            {el.name.common}
+          <li key={common}>
+            {common}
             <button
               onClick={() => {
-                setInputValue(el.name.common);
+                setInputValue(common);
               }}
             >
               Show
