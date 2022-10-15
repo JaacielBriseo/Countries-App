@@ -1,7 +1,8 @@
 :root {
   background-color: beige;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-div{
+div {
   text-align: center;
 }
 h1 {
@@ -14,16 +15,23 @@ h2 {
 h3 {
   color: rgba(159, 224, 27, 0.865);
 }
-h4{
-    color:black;
-    font-size: 25px;
+h4 {
+  color: black;
+  font-size: 25px;
 }
 li {
   font-size: 25px;
-  color: rgba(159, 224, 27, 0.865);
+  color: black;
   margin: 20px 0px 20px 0px;
 }
-p{
-    font-size: 20px;
-    font-weight: bolder;
+button {
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+  background-color: green;
+  font-size: 15px;
+}
+p {
+  font-size: 20px;
+  font-weight: bolder;
 }
