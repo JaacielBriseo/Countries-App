@@ -1,8 +1,8 @@
 export const ManyCountries = ({ filteredCountries, setInputValue }) => {
   return (
     <>
-      {filteredCountries.map((el) => {
-        const { name } = el;
+      {filteredCountries.map((country) => {
+        const { name } = country;
         const { common } = name;
         return (
           <li key={common}>

@@ -1,8 +1,8 @@
 import { ManyCountries, SingleCountry } from './';
 
 export const CountriesFiltered = ({ countries, inputValue, setInputValue }) => {
-  const filteredCountries = countries.filter((element) =>
-    element.name.common.toLowerCase().includes(inputValue.toLowerCase())
+  const filteredCountries = countries.filter((country) =>
+    country.name.common.toLowerCase().includes(inputValue.toLowerCase())
   );
 
   return (

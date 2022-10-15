@@ -1,3 +1,5 @@
+import { Weather } from './Weather';
+
 export const SingleCountry = ({ filteredCountries }) => {
   const selected = filteredCountries[0];
   const { languages, name, capital, population, flags } = selected;
@@ -14,6 +16,7 @@ export const SingleCountry = ({ filteredCountries }) => {
       <h3>Population: {population}</h3>
       <h4>Languages :{languagesList}</h4>
       <img src={png} alt="flag" />
+      <Weather common={common} />
     </>
   );
 };
