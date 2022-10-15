@@ -1,3 +1,18 @@
-html,body {
-    background-color: rgb(110, 104, 104);
+:root {
+  background-image: url(../public/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-h.jpg);
+}
+h1 {
+  color: rgb(251, 34, 34);
+  text-decoration: underline;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: rgba(159, 224, 27, 0.865);
+}
+li{
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
