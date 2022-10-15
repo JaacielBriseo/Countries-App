@@ -17,18 +17,17 @@ export const MainApp = () => {
     setInputValue(target.value);
   };
 
-
   return (
     <>
-      <div style={{textAlign:'center'}}>
+      <div>
         <h1>Find countries</h1>
-        <input
-          type="text"
-          name="countries"
-          value={inputValue}
-          onChange={handleChange}
+        <input value={inputValue} onChange={handleChange} />
+        <hr />
+        <CountriesFiltered
+          countries={countries}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
         />
-        <CountriesFiltered countries={countries} inputValue={inputValue}/>
       </div>
     </>
   );

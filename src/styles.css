@@ -1,6 +1,9 @@
 :root {
   background-color: beige;
 }
+div{
+  text-align: center;
+}
 h1 {
   color: rgb(251, 34, 34);
   text-decoration: underline;
