@@ -1,4 +1,4 @@
-import { Weather } from './Weather';
+import { Weather } from './';
 
 export const SingleCountry = ({ filteredCountries }) => {
   const selected = filteredCountries[0];

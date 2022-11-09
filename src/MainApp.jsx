@@ -1,13 +1,14 @@
-import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { CountriesFiltered } from './components';
+import { countriesApi } from './components/apis/countriesApi';
+
 
 export const MainApp = () => {
   const [countries, setCountries] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
-    axios.get('https://restcountries.com/v3.1/all').then((res) => {
+    countriesApi.get('/all').then((res) => {
       setCountries(res.data);
     });
   }, []);
